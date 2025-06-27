@@ -7,8 +7,8 @@ function toggleNav() {
   }
 }
 
-document.querySelectorAll(".topnav a:not(.icon)").forEach(function (link) {
-  link.addEventListener("click", function () {
+document.querySelectorAll(".topnav a:not(.icon)").forEach(function (a) {
+  a.addEventListener("click", function () {
     document.querySelectorAll(".topnav a").forEach(function (a) {
       a.classList.remove("active");
     });
